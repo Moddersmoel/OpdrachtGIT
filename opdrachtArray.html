@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Naamloos document</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		 	let maanden = ["januari", "februari", "maart"];
+			let nieuweMaanden = ["april", "mei", "juni"];
+			maanden.push(nieuweMaanden);
+			maanden.push("juli");
+			maanden.push("augustus","september", "oktober", "november", "december");
+			document.write(`<p>${maanden}</p>`);
+		
+			document.write(maanden.length);
+		
+			let positieMarch = maanden.indexOf("March");
+			document.write(`<p>${positieMarch}</p>`);
+		
+			let namen = ["Erik", "Sofie", "Adam", "Zorro"];
+			namen.sort();
+			document.write(`<p>${namen}</p>`);
+		
+			let nieuweNaam = prompt("Wat is je volledige naam (voornaam, achternaam) ?");
+			nieuweNaam.reverse();
+			document.write(`<p>${nieuweNaam}</p>`);			
+	</script>
+</body>
+</html>

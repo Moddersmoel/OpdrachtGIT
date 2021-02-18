@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Naamloos document</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		"use strict";
+		let getallen = new Array();
+		let aantal = prompt ('Hoeveel getallen wens je in te geven ?');
+		
+		function controleAantal() {
+			if (aantal==null) {
+				document.write("u hebt geannulleerd !");
+			}
+			else if (aantal.length == 0) {
+				document.write("u heeft niks ingegeven !");
+			}
+			else if (aantal.length != 1){
+				return aantal;
+			}
+			else if (isNaN(aantal)){
+				 document.write(`<p> Dit is geen correcte ingave`);
+				 return "0";
+			}
+			else {
+				document.write(`<p>De ontvangen waarde van het getal is ${controleAantal}.</p>`);
+			}
+		}
+		
+		controleAantal();
+
+		let lengte = getallen.length;
+		for (let i=1; i <= lengte; i++) {
+			let getallen = prompt('Geef getal (nummer van getal) in aub ?');
+			function inhoudGetallen(opvangcontainer) {
+				document.write(`<p>Het Getal is ${opvangcontainer} toegevoegd</p>`);
+			}
+			inhoudGetallen(getallen);		
+		}	
+			
+	</script>
+</body>
+</html>
